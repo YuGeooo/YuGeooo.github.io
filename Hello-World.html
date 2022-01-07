@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <!-- 设置字符集编码 -->
+        <meta charset = "utf-8">
+
+        <!-- 页面标签页上的标题 -->
+        <title>Hello-World</title>
+        
+        <style>
+
+            /* 定义文本初始颜色*/
+            .helloworld{
+                color: black;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+
+        <!-- 文字内容，用 class 打上标签-->
+        <h1 class = 'helloworld'>Hello World !</h1>
+
+        <!-- 设置按钮 -->
+        <button class = 'changecolor'>变为红色</button>
+        <button class = 'resume'>复原</button>
+        
+        <script>
+
+            //先从 html 里抓取变量
+            let turnred = document.querySelector('.changecolor');
+            let turnblack = document.querySelector('.resume');
+            let helloworld = document.querySelector('.helloworld');
+            
+            //点击按钮后的操作
+            turnred.onclick = function(){
+                helloworld.style.color = 'red';
+            }
+
+            turnblack.onclick = function(){
+                helloworld.style.color = 'black';
+            }
+
+        </script>
+
+    </body>
+</html>
